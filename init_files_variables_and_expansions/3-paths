@@ -1,3 +1,2 @@
 #!/bin/bash
-echo $PATH | awk -F: 'for{i=1; i<=NF; i++) if(i!="") c++ 
-print c}'
+echo $PATH | tr ':' '\n' | wc -l
