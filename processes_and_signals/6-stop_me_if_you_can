@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # stop
-pkill -f 4-to_infinity_and_beyond
+(./4-to_infinity_and_beyond &)
+jobs -p | xargs kill -INT
