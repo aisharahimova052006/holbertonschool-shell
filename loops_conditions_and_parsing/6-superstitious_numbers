@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bad luck 
 count=1
-while [$count -le 20]; do
+while [ $count -le 20 ]; do
     echo "$count"
     case $count in
         4)echo "bad luck from China";;
