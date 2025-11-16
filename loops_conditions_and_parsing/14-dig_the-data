@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #dig
-awk '{count[$1" "$9]++} END {for (i in count) print count[i], i}' apache-access.log | sort -nr
+#!/usr/bin/env bash
+awk '{count[$1" "$9]++} END {for (i in count) printf "%5d %s\n", count[i], i}' apache-access.log | sort -nr
