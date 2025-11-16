@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # stop
-(./4-to_infinity_and_beyond &)
-jobs -p | xargs kill -INT
+fg $(jobs -p | grep -f <(pgrep -f 4-to_infinity_and_beyond)) < /dev/tty
+
